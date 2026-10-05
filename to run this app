@@ -1,0 +1,35 @@
+(Set up Virtual Environment)
+
+# Open command prompt in project directory
+cd c:\Users\sahana s\OneDrive\Desktop\PredictaQ
+python -m venv venv
+.\venv\Scripts\activate
+----------------------------------------------------------------------------
+(Install Requirements)(if not done)
+
+pip install -r requirements.txt
+pip install streamlit plotly
+----------------------------------------------------------------------------
+(Run Each Phase in Order)(if not done)
+
+# Run data preparation
+python phase1_data_prep.py
+
+# Train classical models
+python phase2_classical_ml.py
+
+# Train quantum model
+python phase3_vqc_torch.py
+
+# Run hybrid predictions
+python phase4_hybrid.py
+----------------------------------------------------------------------------
+(Launch the Web Application)
+
+# Navigate to app directory
+cd app
+
+# Run Streamlit app
+streamlit run app.py
+
+********************************************
